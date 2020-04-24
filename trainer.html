@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Trainer Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i,800&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script async src="js/header.js"></script>
+        <script async src="js/trainer.js"></script>
+
+    </head>
+    <body>
+      <header id="header">
+        <div class="header_position">
+          <img src="img/logo.svg" alt="logo" class="header_logo" onclick="goUp()">
+          <nav>
+            <ul class="header_menu">
+              <li><a href="index.html" class="header_menu_list for_header_list-SportsmenPage">Главная</a></li>
+              <li><a href="trainer.html" class="header_menu_list for_header_list-SportsmenPage">Тренерам</a></li>
+              <li><a href="user.html" class="header_menu_list for_header_list-SportsmenPage">Спортсменам</a></li>
+            </ul>
+          </nav>
+          <div class="header_burger header_burger_black-SportsmenPage"></div>
+        </div>
+      </header>
+      <main>
+        <section class="pageForTrainer">
+          <p class="pageForTrainer_mainText">Вносите вклад в развитие спорта и тела, и при этом зарабатывайте!</p>
+          <p class="pageForTrainer_pText">Можно заработать своим советом или преподав урок для развития окружающих</p>
+          <div class="pageForTrainer_lineEnter">
+            <hr class="hrTrain"><p class="pageForTrainer_pText">Вход</p><hr class="hrTrain">
+          </div>
+          <label for="login" class="enterText">Логин</label>
+          <input type="text" id="login" class="enterText_input" placeholder="Введите логин">
+          <label for="password" class="enterText">Пароль</label>
+          <input type="password" id="userPassword" class="enterText_input" placeholder="Введите пароль">
+          <input type="submit" value="Войти" id="validateUser" class="enterText_submit">
+          <a href="registration.html" class="registration">Зарегистрироваться</a>
+        </section>
+
+        <section class="advantage">
+          <div class="advantage-block">
+            <p class="advantage-block_mainhead">Найти новых учеников</p>
+            <div class="advantage-block_other">
+              <p class="advantage-block_head">Стабильная база учеников</p>
+              <p class="advantage-block_text">Отвечайте на заявки учеников на SportsMen.</p>
+            </div>
+            <div class="advantage-block_other">
+              <p class="advantage-block_head">Развитие карьеры онлайн</p>
+              <p class="advantage-block_text">Ваш профиль отображается в результатах поиска и помогает привлечь новых учеников.</p>
+            </div>
+          </div>
+          <hr class="hrTrain">
+          <div class="advantage-block">
+            <p class="advantage-block_mainhead">Развивайте собственный бизнес</p>
+            <div class="advantage-block_other">
+              <p class="advantage-block_head">Календарь уроков</p>
+              <p class="advantage-block_text">Планируйте ваше расписание и управляйте уроками с помощью Календаря SportsMen.</p>
+            </div>
+            <div class="advantage-block_other">
+              <p class="advantage-block_head">Персональный веб-сайт</p>
+              <p class="advantage-block_text">Получите персональный веб-сайт и домен для развития своих услуг онлайн.</p>
+            </div>
+          </div>
+          <hr class="hrTrain">
+          <div class="advantage-block">
+            <p class="advantage-block_mainhead">Зарабатывайте без проблем</p>
+            <div class="advantage-block_other">
+              <p class="advantage-block_head">Почасовая оплата</p>
+              <p class="advantage-block_text">Вы можете изменить стоимость часа своих занятий в любое время.</p>
+            </div>
+            <div class="advantage-block_other">
+              <p class="advantage-block_head">Безопасные платежи</p>
+              <p class="advantage-block_text">Вы получаете оплату непосредственно со своего профиля на личный банковский счет/карту или другой ресурс через каналы безопасных платежей.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="popularQuestion">
+          <p class="pageForTrainer_mainText">Популярные вопросы</p>
+          <div>
+            <div class="popularQuestion_block">
+              <p class="popularQuestion_head">Сколько я буду зарабатывать?</p>
+              <span class="popularQuestion_arrow"></span>
+            </div>
+            <p class="popularQuestion_text">
+              Ваш заработок зависит от почасовой оплаты, которую вы установили в профиле, и от того, как часто вы можете проводить тренировки. Если к вашим услугам открыт широкий доступ и ваш профиль привлекателен для спортсменов, они, вероятнее всего, будут бронировать больше услуг и в результате ваш заработок увеличится. Наиболее популярные тренера на SportsMen зарабатывают до $550 еженедельно. SportsMen взимает 100% комиссию от стоимости первого урока с каждым новым учеником.
+              Для всех последующих услуг комиссия колеблется от 33 до 18% и зависит от числа завершенных тренировок с спортсменами. Чем больше услуг вы проводите на SportsMen, тем меньше будет ваша комиссия.
+            </p>
+          </div>
+          <hr class="hrTrain">
+          <div>
+            <div class="popularQuestion_block">
+              <p class="popularQuestion_head">Как я буду получать оплату?</p>
+              <span class="popularQuestion_arrow"></span>
+            </div>
+            <p class="popularQuestion_text">
+              После того, как спортсмен подтверждает услугу, тренеру зачисляется сумма, соответствующая длительности услуги и почасовой оплате.
+              Деньги хранятся на вашем счете SportsMen, и вы можете снять их в любое время через Paypal, Payoneer или Skrill.
+            </p>
+          </div>
+          <hr class="hrTrain">
+          <div>
+            <div class="popularQuestion_block">
+              <p class="popularQuestion_head">Это бесплатно?</p>
+              <span class="popularQuestion_arrow"></span>
+            </div>
+            <p class="popularQuestion_text">
+              Да. Все тренера имеют одинаковые права и возможности. Взимается лишь комиссионный сбор за услуги, проведенные на SportsMen.
+            </p>
+          </div>
+          <hr class="hrTrain">
+          <div>
+            <div class="popularQuestion_block">
+              <p class="popularQuestion_head">Обязательно ли иметь сертификат тренера?</p>
+              <span class="popularQuestion_arrow"></span>
+            </div>
+            <p class="popularQuestion_text">
+              Нет, нашим тренерам не обязательно иметь сертификат. Опыт является желательным и, безусловно, увеличит Ваши шансы на привлечение спортсменов. Если вы обладаете должными знаниями и навыками, вы также можете зарегистрироваться на SportsMen в качестве тренера или диетолога.
+            </p>
+          </div>
+          <hr class="hrTrain">
+          <div>
+            <div class="popularQuestion_block">
+              <p class="popularQuestion_head">Как зарегистрироваться в качестве тренера на SportsMen?</p>
+              <span class="popularQuestion_arrow"></span>
+            </div>
+            <p class="popularQuestion_text">
+              Пожалуйста, подайте заявку, используя форму ниже.
+            </p>
+          </div>
+          <hr class="hrTrain">
+          <div>
+            <div class="popularQuestion_block">
+              <p class="popularQuestion_head">Как платформа помогает найти клиентов?</p>
+              <span class="popularQuestion_arrow"></span>
+            </div>
+            <p class="popularQuestion_text">
+              Мы отображаем ваш профиль тренера в результатах поиска. Позиция Вашего профиля зависит от четырех основных факторов: Ваше расписание, отзывы спортсменов, которые проходили с вами услуги на SportsMen, качество и наполненность Вашего профиля.
+            </p>
+          </div>
+          <hr class="hrTrain">
+          <div>
+            <div class="popularQuestion_block">
+              <p class="popularQuestion_head">Какие услуги я могу предоставлять?</p>
+              <span class="popularQuestion_arrow"></span>
+            </div>
+            <p class="popularQuestion_text">
+              На SportsMen представлены услуги, которые указыват в профиле все тренера.
+            </p>
+          </div>
+          <hr class="hrTrain">
+          <div>
+            <div class="popularQuestion_block">
+              <p class="popularQuestion_head">Что лучше: онлайн или локальные тренировки?</p>
+              <span class="popularQuestion_arrow"></span>
+            </div>
+            <p class="popularQuestion_text">
+              Для вас доступны обе возможности. Все, что нужно для проведения тренировок онлайн – это стабильное Интернет-соединение, микрофон и веб-камера.
+            </p>
+          </div>
+        </section>
+
+        <section class="registrationForTrainer">
+          <div class="pageForTrainer">
+            <p class="pageForTrainer_mainText">Бесплатная регистрация без рисков</p>
+            <div class="pageForTrainer_lineEnter">
+              <hr class="hrTrain"><p class="pageForTrainer_pText">Регистрация</p><hr class="hrTrain">
+            </div>
+            <label for="login" class="enterText">Логин</label>
+            <input type="text" id="createLogin" class="enterText_input" placeholder="Придумайте логин">
+            <label for="password" class="enterText">Пароль</label>
+            <input type="password" id="createUserPassword" class="enterText_input" placeholder="Придумайте пароль">
+            <div class="checkBoxRegistr">
+              <p class="parentForRadio">
+                <label>
+                  Спортсмен
+                  <input id="radioArrowUser" type="radio" name="enter" value="Спортсмен">
+                  <span class="siblingForRadio"></span>
+                </label>
+              </p>
+              <p class="parentForRadio">
+                <label>
+                  Тренер
+                  <input id="radioArrowTrainer" type="radio" name="enter" value="Тренер">
+                    <span class="siblingForRadio"></span>
+                </label>
+              </p>
+            </div>
+            <input type="submit" value="Зарегистрироваться" id="createUser" class="enterText_submit">
+          </div>
+        </section>
+      </main>
+
+      <div class="noteEverything specialityHidden">
+        <div class="note-popup">
+          <p class="note-text">Нужно заполнить все поля ввода!</p>
+        </div>
+      </div>
+
+      <div class="noteEverythingEnter specialityHidden">
+        <div class="note-popup">
+          <p class="note-text">Невереный логин или пароль!</p>
+        </div>
+      </div>
+
+      <div class="registrationResolve specialityHidden">
+        <div class="resolve-popup">
+          <p class="note-text note-text-resolve"></p>
+          <a href="#" class="resolve-button">Ok!</a>
+        </div>
+      </div>
+
+      <div class="enterResolve specialityHidden">
+        <div class="resolve-popup">
+          <p class="note-text note-text-resolveEnter"></p>
+          <a href="#" class="resolve-buttonEnter">Ok!</a>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer_flex">
+          <div>
+            <p>Поддержка</p>
+            <p class="footer_smallText">SportsMen@gmail.com</p>
+          </div>
+          <div>
+            <p>Контакты</p>
+            <p class="footer_smallText">Ukraine, Dnipro</p>
+          </div>
+          <div>
+            <p>Навигация</p>
+            <ul class="footer_ul">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="trainer.html">Тренерам</a></li>
+              <li><a href="user.html">Спортсменам</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Мы в соц.сетях</p>
+            <ul class="footer_ul">
+              <li class="facebook"><a href="#">Facebook</a></li>
+              <li class="youtube"><a href="#">YouTube</a></li>
+              <li class="instagram"><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </body>
+</html>

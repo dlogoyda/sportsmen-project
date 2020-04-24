@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sportsmen after Enter</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i,800&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script async src="js/header.js"></script>
+        <script async src="js/userPage.js"></script>
+
+    </head>
+    <body>
+      <header id="header">
+        <div class="header_position">
+          <img src="img/logo.svg" alt="logo" class="header_logo" onclick="goUp()">
+          <nav>
+            <ul class="header_menu">
+              <li><a href="index.html" class="header_menu_list for_header_list-SportsmenPage">Главная</a></li>
+              <li><a href="trainer.html" class="header_menu_list for_header_list-SportsmenPage">Тренерам</a></li>
+              <li><a href="user.html" class="header_menu_list for_header_list-SportsmenPage">Спортсменам</a></li>
+            </ul>
+          </nav>
+          <div class="header_burger header_burger_black-SportsmenPage"></div>
+        </div>
+      </header>
+      <main>
+        <div class="pageTrainer-space">
+          <p>Приветствуем Вас на нашем проекте!<br>Вы можете заполнить свою анкету, либо дополнить и сохранить изменения.</p>
+        </div>
+        <section class="pageTrainer_blockWithInputs">
+          <div class="userPageSection">
+            <div>
+              <p>1. Ваше фото</p>
+              <input type="text"
+                     name="AddImage"
+                     placeholder="Вставьте ссылку на аватар"
+                     class="pageTrainer_input"
+                     id="AddImage"
+              />
+            </div>
+            <div class="pageTrainer_margin">
+              <label>
+                2. Ваше Имя<br>
+                <input class="pageTrainer_input pageUser_name" type="text" placeholder="Введите имя и фамилию (по желанию)">
+              </label>
+            </div>
+            <div class="pageTrainer_margin">
+              <label>
+                3. Дата рождения<br>
+                <input class="pageTrainer_input pageUser_dateBirth" type="date" placeholder="Введите номер телефона">
+              </label>
+            </div>
+            <div class="pageTrainer_margin">
+              <label>
+                4. Номер телефона<br>
+                <input class="pageTrainer_input pageUser_phone" type="text" placeholder="Введите номер телефона">
+              </label>
+            </div>
+            <div class="pageTrainer_margin">
+              <p>5. Напишите что-нибудь о себе, cвои цели для достижения спортивного успеха:</p>
+              <textarea class="pageTrainer_textArea" placeholder="Напишите что-нибудь о себе..." value=""></textarea>
+            </div>
+          </div>
+          <button class="pageTrainer_createProfile">Сохранить данные</button>
+        </section>
+
+        <div id="finishedBlock"></div>
+      </main>
+
+      <footer>
+        <div class="footer_flex">
+          <div>
+            <p>Поддержка</p>
+            <p class="footer_smallText">SportsMen@gmail.com</p>
+          </div>
+          <div>
+            <p>Контакты</p>
+            <p class="footer_smallText">Ukraine, Dnipro</p>
+          </div>
+          <div>
+            <p>Навигация</p>
+            <ul class="footer_ul">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="trainer.html">Тренерам</a></li>
+              <li><a href="user.html">Спортсменам</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Мы в соц.сетях</p>
+            <ul class="footer_ul">
+              <li class="facebook"><a href="#">Facebook</a></li>
+              <li class="youtube"><a href="#">YouTube</a></li>
+              <li class="instagram"><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </body>
+</html>

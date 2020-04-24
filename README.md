@@ -1,0 +1,1 @@
+A project for athletes where you can find the trainer that you need. The project includes several pages, including registration and profile filling. In the search for a trainer there is filtering on several parameters. Also the project has two directions: for coaches and for athletes. The project is written in JavaScript.

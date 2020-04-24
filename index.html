@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Main Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i,800&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script async src="js/header.js"></script>
+        <script async src="js/index.js"></script>
+
+    </head>
+    <body>
+      <header id="header">
+        <div class="header_position">
+          <img src="img/logo.svg" alt="logo" class="header_logo" onclick="goUp()">
+          <nav>
+            <ul class="header_menu">
+              <li><a href="index.html" class="header_menu_list">Главная</a></li>
+              <li><a href="trainer.html" class="header_menu_list">Тренерам</a></li>
+              <li><a href="user.html" class="header_menu_list">Спортсменам</a></li>
+            </ul>
+          </nav>
+          <div class="header_burger header_burger_white"></div>
+        </div>
+      </header>
+      <main>
+        <section class="headAbout">
+          <p class="headAbout_title">Проэкт создан для поиска лучшего тренера и усовершенствования своего тела и организма</p>
+          <a href="enter.html" class="button_main headAbout_button">Заказать тренировку</a>
+        </section>
+
+        <section class="about">
+          <h3 class="text_title">Как это работает?</h3>
+          <div class="about_cards">
+            <div class="about_photo about_photoOne">
+              <div class="about_info">
+                <img src="img/registr_icon.svg" alt="registr" class="about_icon">
+                <p class="about_info-title">Регистрируешься</p>
+                <hr>
+                <p class="about_info-text">Если тебя все устраивает, ты можешь зарегистрироваться с помощью Google сервиса и сразу заказать тренировку</p>
+              </div>
+            </div>
+            <div class="about_photo about_photoTwo">
+              <div class="about_info">
+                <img src="img/addInfo_icon.svg" alt="addInfo" class="about_icon">
+                <p class="about_info-title">Заполняешь профиль</p>
+                <hr>
+                <p class="about_info-text">Добавляешь всю необходимую информацию о себе, своих пожеланиях и предпочтениях.</p>
+              </div>
+            </div>
+            <div class="about_photo about_photoThree">
+              <div class="about_info">
+                <img src="img/choose_icon.svg" alt="choose" class="about_icon">
+                <p class="about_info-title">Выбираешь тренера</p>
+                <hr>
+                <p class="about_info-text">Ты можешь просмотреть как и всех тренеров и выбрать наиболее подходящего, либо же воспользоваться фильтром</p>
+              </div>
+            </div>
+            <div class="about_photo about_photoFour">
+              <div class="about_info">
+                <img src="img/gym_icon.svg" alt="gym" class="about_icon">
+                <p class="about_info-title">Тренируешься</p>
+                <hr>
+                <p class="about_info-text">Ура! Ты выбрал тренера и теперь идешь только вперед!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="wrapper">
+          <section class="trainer">
+            <div class="trainer_info">
+              <h3 class="text_title">Тренерам</h3>
+              <p class="trainer_text">
+                Если ты тренер и хочешь давать советы и проводить персональные тренировки, то следует заполнить соответствующий профиль, выставить цену, возможно фото- видео-представление о себе.
+              </p>
+              <div class="trainer_photoButton">
+                <div class="trainer_image"></div>
+                <a href="registration.html" class="button_main trainer_button">Стать тренером</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="wrapper_athlete">
+        <section class="athlete">
+          <h3 class="text_title">Спортсменам</h3>
+          <p class="athletes_text">
+            Спортсмены могут заказать не только тренировку, но и такую услугу как консультации тренера, диетолога и т.д.
+          </p>
+          <div class="athlete_cicle">
+            <div class="athlete_items opportunity">Возможности для спортсмена</div>
+            <div class="athlete_items personalTrain">Заказ услуг</div>
+          </div>
+        </section>
+        <div class="orderBackground specialityHidden">
+          <div  class="whiteBack">
+            <div class="whiteBackPrev"></div>
+            <div class="whiteBackFlex">
+              <div class="whiteBackOneBox oneAbility">
+                <p class="whiteBackText">Можно выбрать совершенно любого тренера.</p>
+                <img src="img/oneIndexPhoto.png" alt="all trainers" class="whiteBlackOne">
+              </div>
+              <div class="whiteBackOneBox specialityHidden twoAbility">
+                <p class="whiteBackText">Выбираешь доступные виды спорта.</p>
+                <img src="img/twoIndexPhoto.png" alt="all trainers" class="whiteBlackTwo">
+              </div>
+              <div class="whiteBackOneBox specialityHidden threeAbility">
+                <p class="whiteBackText">Устанавливаешь наиболее приемлемую для тебя цену.</p>
+                <img src="img/threeIndexPhoto.png" alt="all trainers" class="whiteBlackThree">
+              </div>
+              <div class="whiteBackOneBox specialityHidden fourAbility">
+                <p class="whiteBackText">Если хочешь индивидуальную тренировку в определенном спорт зале - выбираешь нужную страну.</p>
+                <img src="img/fourIndexPhoto.png" alt="all trainers" class="whiteBlackFour">
+              </div>
+              <div class="whiteBackOneBox specialityHidden fiveAbility">
+                <p class="whiteBackText">Можешь также выбрать удобные для тебя дни и время суток.</p>
+                <img src="img/fiveIndexPhoto.png" alt="all trainers" class="whiteBlackOne">
+              </div>
+            </div>
+            <div  class="whiteBackNext"></div>
+            <ul class="absoluteList"></ul>
+          </div>
+        </div>
+
+        <div class="orderBackgroundTwo specialityHidden">
+          <div  class="secondBack">
+            <div class="secondPrev"></div>
+            <div class="secondFlex">
+              <div class="whiteBackTwoBox oneAbility">
+                <p class="secondText">Напротив выбранного тренера нажимаешь<br>"Заказать услугу".</p>
+                <img src="img/secondOne.png" alt="all trainers" class="secondOne">
+              </div>
+              <div class="whiteBackTwoBox specialityHidden twoAbility">
+                <p class="secondText">Выбираешь удобное для тебя время суток и день недели.</p>
+                <img src="img/secondTwo.png" alt="all trainers" class="secondTwo">
+              </div>
+              <div class="whiteBackTwoBox specialityHidden threeAbility">
+                <p class="secondText">Пишешь, что тебе нужно и какие цели ты преследуешь.</p>
+                <img src="img/secondThree.png" alt="all trainers" class="secondThree">
+              </div>
+              <div class="whiteBackTwoBox specialityHidden fourAbility">
+                <p class="secondText">Поздравляем! С Вами свяжется менеджер для дальнейшей работы!</p>
+                <img src="img/secondFour.png" alt="all trainers" class="secondFour">
+              </div>
+            </div>
+            <div  class="secondNext"></div>
+            <ul class="absoluteSecondList"></ul>
+          </div>
+        </div>
+      </div>
+      </main>
+      <footer>
+        <div class="footer_flex">
+          <div>
+            <p>Поддержка</p>
+            <p class="footer_smallText">SportsMen@gmail.com</p>
+          </div>
+          <div>
+            <p>Контакты</p>
+            <p class="footer_smallText">Ukraine, Dnipro</p>
+          </div>
+          <div>
+            <p>Навигация</p>
+            <ul class="footer_ul">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="trainer.html">Тренерам</a></li>
+              <li><a href="user.html">Спортсменам</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Мы в соц.сетях</p>
+            <ul class="footer_ul">
+              <li class="facebook"><a href="#">Facebook</a></li>
+              <li class="youtube"><a href="#">YouTube</a></li>
+              <li class="instagram"><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </body>
+</html>

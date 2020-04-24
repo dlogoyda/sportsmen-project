@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Trainer after Enter</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i,800&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script async src="js/header.js"></script>
+        <script async src="js/trainerPage.js"></script>
+
+    </head>
+    <body>
+      <header id="header">
+        <div class="header_position">
+          <img src="img/logo.svg" alt="logo" class="header_logo" onclick="goUp()">
+          <nav>
+            <ul class="header_menu">
+              <li><a href="index.html" class="header_menu_list for_header_list-SportsmenPage">Главная</a></li>
+              <li><a href="trainer.html" class="header_menu_list for_header_list-SportsmenPage">Тренерам</a></li>
+              <li><a href="user.html" class="header_menu_list for_header_list-SportsmenPage">Спортсменам</a></li>
+            </ul>
+          </nav>
+          <div class="header_burger header_burger_black-SportsmenPage"></div>
+        </div>
+      </header>
+      <main>
+        <div class="pageTrainer-space">
+          <p>Приветствуем Вас на нашем проекте!<br>Вы можете заполнить свою анкету, либо дополнить и сохранить изменения.</p>
+        </div>
+        <section class="pageTrainer_blockWithInputs">
+          <div>
+            <p>1. Ваше фото</p>
+            <input type="text"
+                   name="AddImage"
+                   placeholder="Вставьте ссылку на аватар"
+                   class="pageTrainer_input"
+                   id="AddImage"
+            />
+          </div>
+          <div class="pageTrainer_margin">
+            <label>
+              2. Ваше Имя<br>
+              <input class="pageTrainer_input pageTrainer_name" type="text" placeholder="Введите имя и фамилию (по желанию)">
+            </label>
+          </div>
+          <div class="pageTrainer_checkBox">
+            <p>3. Выберите направления, которые будут доступны спортсменам от Вас:</p>
+            <div class="pageTrainer_checkBoxBlock">
+              <label class="pageTrainer_labelCheckbox">
+                Личные тренировки
+                <input type="checkbox" class="checkboxGym" value="gym">
+                <span class="gym"></span>
+              </label>
+              <label class="pageTrainer_labelCheckbox">
+                Предоставление консультации или составления расписания
+                <input type="checkbox" class="checkboxChat" value="chat">
+                <span class="chat"></span>
+              </label>
+              <label class="pageTrainer_labelCheckbox">
+                Консультация, связанная с питанием и диетой
+                <input type="checkbox" class="checkboxDiet" value="diet">
+                <span class="diet"></span>
+              </label>
+            </div>
+          </div>
+          <div class="pageTrainer_margin">
+            <p>4. Напишите что-нибудь о себе, или что-нибудь, что привлечет внимание спортсменов:</p>
+            <textarea class="pageTrainer_textArea" placeholder="Напишите что-нибудь о себе..." value=""></textarea>
+          </div>
+          <div class="pageTrainer_margin">
+            <p>5. Напишите какие виды спорта Вы собираетесь преподать для спортсменов:</p>
+            <div class="pageTrainer_addBlock">
+              <input class="pageTrainer_inputForKindOfSport pageTrainer_input" type="text" value="">
+              <span class="pageTrainer_addKindSport"></span>
+            </div>
+            <ul class="specification"></ul>
+          </div>
+          <div class="pageTrainer_margin">
+            <p>6. Какую цену Вы хотите за один час своей консультации/тренировки?</p>
+            <p>(диапазон в районе 50 - 2200, в ГРН)</p>
+            <input class="pageTrainer_inputPrice pageTrainer_input" type="text" value="">
+          </div>
+          <div class="pageTrainer_margin">
+            <p>7. Виберите день недели и время суток, когда можете давать консультации/тренировки для спортсменов</p>
+            <div class="table-trainer table-trainer_inTrainerPge">
+              <div class="table-trainer_row">
+                <div class="table-trainer_text">Дни недели</div>
+                <div class="table-flex">
+                  <div class="table-flex_day one">пн</div>
+                  <div class="table-flex_day two">вт</div>
+                  <div class="table-flex_day three">ср</div>
+                  <div class="table-flex_day four">чт</div>
+                  <div class="table-flex_day five">пт</div>
+                  <div class="table-flex_day six">сб</div>
+                  <div class="table-flex_day seven">вс</div>
+                </div>
+              </div>
+
+              <div class="table-trainer_row">
+                <div class="table-trainer_text">
+                  <span>Утро</span>
+                  <div class="text-time">06:00 - 12:00</div>
+                </div>
+                <div class="table-flex">
+                  <div class="table-flex_elem elemMorning one opacityDay"></div>
+                  <div class="table-flex_elem elemMorning two opacityDay"></div>
+                  <div class="table-flex_elem elemMorning three opacityDay"></div>
+                  <div class="table-flex_elem elemMorning four opacityDay"></div>
+                  <div class="table-flex_elem elemMorning five opacityDay"></div>
+                  <div class="table-flex_elem elemMorning six opacityDay"></div>
+                  <div class="table-flex_elem elemMorning seven opacityDay"></div>
+                </div>
+              </div>
+
+              <div class="table-trainer_row">
+                <div class="table-trainer_text">
+                  <span>День</span>
+                  <div class="text-time">12:00 - 18:00</div>
+                </div>
+                <div class="table-flex">
+                  <div class="table-flex_elem elemAfternoon one opacityDay"></div>
+                  <div class="table-flex_elem elemAfternoon two opacityDay"></div>
+                  <div class="table-flex_elem elemAfternoon tree opacityDay"></div>
+                  <div class="table-flex_elem elemAfternoon four opacityDay"></div>
+                  <div class="table-flex_elem elemAfternoon five opacityDay"></div>
+                  <div class="table-flex_elem elemAfternoon six opacityDay"></div>
+                  <div class="table-flex_elem elemAfternoon seven opacityDay"></div>
+                </div>
+              </div>
+
+              <div class="table-trainer_row">
+                <div class="table-trainer_text">
+                  <span>Вечер</span>
+                  <div class="text-time">18:00 - 24:00</div>
+                </div>
+                <div class="table-flex">
+                  <div class="table-flex_elem elemEvening one opacityDay"></div>
+                  <div class="table-flex_elem elemEvening two opacityDay"></div>
+                  <div class="table-flex_elem elemEvening three opacityDay"></div>
+                  <div class="table-flex_elem elemEvening four opacityDay"></div>
+                  <div class="table-flex_elem elemEvening five opacityDay"></div>
+                  <div class="table-flex_elem elemEvening six opacityDay"></div>
+                  <div class="table-flex_elem elemEvening seven opacityDay"></div>
+                </div>
+              </div>
+
+              <div class="table-trainer_row">
+                <div class="table-trainer_text">
+                  <span>Ночь</span>
+                  <div class="text-time">24:00 - 06:00</div>
+                </div>
+                <div class="table-flex">
+                  <div class="table-flex_elem elemNight one opacityDay"></div>
+                  <div class="table-flex_elem elemNight two opacityDay"></div>
+                  <div class="table-flex_elem elemNight three opacityDay"></div>
+                  <div class="table-flex_elem elemNight four opacityDay"></div>
+                  <div class="table-flex_elem elemNight five opacityDay"></div>
+                  <div class="table-flex_elem elemNight six opacityDay"></div>
+                  <div class="table-flex_elem elemNight seven opacityDay"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="pageTrainer_createProfile">Сохранить данные</button>
+        </section>
+        <div id="finishedBlock"></div>
+      </main>
+
+      <footer>
+        <div class="footer_flex">
+          <div>
+            <p>Поддержка</p>
+            <p class="footer_smallText">SportsMen@gmail.com</p>
+          </div>
+          <div>
+            <p>Контакты</p>
+            <p class="footer_smallText">Ukraine, Dnipro</p>
+          </div>
+          <div>
+            <p>Навигация</p>
+            <ul class="footer_ul">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="trainer.html">Тренерам</a></li>
+              <li><a href="user.html">Спортсменам</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Мы в соц.сетях</p>
+            <ul class="footer_ul">
+              <li class="facebook"><a href="#">Facebook</a></li>
+              <li class="youtube"><a href="#">YouTube</a></li>
+              <li class="instagram"><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </body>
+</html>
